@@ -66,11 +66,12 @@ Permissões: Administrator (ou permissões específicas)
 Configure o Redirect URI: https//seu-dominio.com/oauth2/callback (ou seu domínio)
 2. Instalação
 # Clone o repositório
+```
 git clone <repository-url>
-cd discord-bot-backup-oauth2
+cd discord-bot-backup-oauth2 ```
 
 # Instale as dependências
-npm install
+``` npm install ```
 
 # Configure as variáveis de ambiente
 cp env.example .env
@@ -78,14 +79,14 @@ cp env.example .env
 3. Variáveis de Ambiente
 Edite o arquivo .env:
 
-BOT_TOKEN=seu-token-do-bot
+``` BOT_TOKEN=seu-token-do-bot
 CLIENT_ID=seu-client-id
 CLIENT_SECRET=seu-client-secret
 REDIRECT_URI=https//seu-dominio.com/oauth2/callback
 DATABASE=mongodb://user:pass@localhost:27017/backup-bot
 PORT=80
 ADMIN_IDS=123456789,987654321
-LOG_LEVEL=info
+LOG_LEVEL=info ```
 Nota: ENCRYPTION_KEY é opcional. Se não fornecida, o bot usará o CLIENT_SECRET como base.
 
 🎮 Como Usar
@@ -123,16 +124,16 @@ Os backups serão criados automaticamente
 docker-compose up -d
 
 # Ver logs
-docker-compose logs -f
+``` docker-compose logs -f ```
 
 # Parar containers
-docker-compose down
+``` docker-compose down ```
 📝 Scripts
-npm run dev      # Modo desenvolvimento
+``` npm run dev      # Modo desenvolvimento
 npm start        # Modo produção
 npm test         # Executar testes
 npm run migrate  # Aplicar migrations
-npm run seed     # Popular banco com dados de exemplo
+npm run seed     # Popular banco com dados de exemplo ```
 🔒 Segurança
 Tokens OAuth2 são criptografados usando AES-256
 Apenas administradores podem usar comandos de backup/restore
