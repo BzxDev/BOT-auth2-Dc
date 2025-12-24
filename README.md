@@ -126,8 +126,9 @@ Selecione os componentes
 Os backups serão criados automaticamente
 🐳 Docker
 # Subir containers
+```
 docker-compose up -d
-
+```
 # Ver logs
 ```
 docker-compose logs -f
