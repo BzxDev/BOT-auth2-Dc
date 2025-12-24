@@ -1,0 +1,38 @@
+{
+  "name": "discord-bot-backup-oauth2",
+  "version": "1.0.0",
+  "description": "Bot Discord completo para backup de servidores com autenticação OAuth2",
+  "main": "src/index.js",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "test": "node --test tests/*.test.js",
+    "lint": "eslint src/ --fix",
+    "format": "prettier --write \"src/**/*.js\""
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "backup",
+    "oauth2",
+    "mongodb"
+  ],
+  "author": "ShardCloud",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.23.2",
+    "mongoose": "^8.19.2",
+    "express": "^4.18.2",
+    "dotenv": "^16.0.3",
+    "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "eslint": "^8.57.0",
+    "prettier": "^3.1.1"
+  }
+}
