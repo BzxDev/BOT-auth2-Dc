@@ -188,7 +188,3 @@ Consulte a pasta `docs/` para documentação completa:
 - `02-configuration.md` - Configuração detalhada
 - `03-running.md` - Como usar o bot
 - `04-deployment.md` - Deploy em produção
-
-## 📄 Licença
-
-MIT
