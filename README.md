@@ -73,7 +73,9 @@ cd discord-bot-backup-oauth2
 ```
 
 # Instale as dependências
-```npm install```
+```
+npm install
+```
 
 # Configure as variáveis de ambiente
 cp env.example .env
